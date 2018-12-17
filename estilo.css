@@ -1,0 +1,261 @@
+/*ESTILO DE LA PAG DE TUMBLR*/
+body {background-color:#14071a;
+height:100%;
+font-family: arial;}
+
+div {width: 80%;
+background-color:#192042;
+margin:10%;
+margin-top:1.5%;
+padding:8px;
+float:none;}
+
+header {
+float:none;
+}
+
+/*nav{margin-top:0;
+margin-bottom:3px;
+padding:0;
+float:none;
+background-color:white;}
+
+nav ul {margin:0;
+padding-top:6px;
+padding-left:0;
+}
+
+nav li{display: inline;
+text-align:center;
+padding:60px;
+padding-left:20px;
+}*/
+
+/*ul {background-color:white;}*/
+
+
+/*a:link {color:#F44D7A;
+text-decoration:none;}*/
+
+.flotad {float: right;
+width:400px;
+height:400px;}
+
+.flotaizq {float:left;
+clear:rigth;
+width:300px;
+height:400px;
+padding-right:5px;}
+
+.fizqchico {float:left;
+clear:rigth;
+width:200px;
+height:185px;
+padding-right:10px;}
+
+.compartido {width:400px;
+height:500px;
+padding-left:80px;
+padding-top:10px;}
+
+.compartido2 {width:475px;
+height:700px;
+padding-left:30px;
+padding-top:10px;}
+
+.art {width:500px;
+height:350px;
+padding-left:180px;
+padding-top:10px;}
+
+.artV {width:400px;
+height:500px;
+padding-left:180px;
+padding-top:10px;}
+
+.foto {float: right;
+clear:left;
+width:160px;
+height:220px;
+padding-right:10%;
+}
+
+.datos {float:rigth;
+clear:left;
+width:70%;}
+
+section {background-color: white;
+padding: 5px;
+margin:3px;
+width:50%;
+float:left;
+clear:left;
+}
+
+.comienzo {background-color: white;
+padding: 5px;
+margin:12px;
+margin-top:50px;
+width:45%;
+float:right;
+clear:right;}
+
+.gral {background-color: white;
+padding: 8px;
+margin:4px;
+width:98%;
+}
+
+footer {background-color:#14071a;
+float:none;
+clear:both;
+margin:2px;
+margin-top:4px;
+text-align:center;
+color: white;
+}
+
+.juego {width:350px;
+height:350px;
+margin:0;
+padding-left:5px;
+padding-right:20px;
+padding-bottom:2px;
+}
+
+.theory {float:left;
+clear:rigth;
+width:450px;
+height:250px;
+padding-right:10px;}
+
+.medio {padding-left:25%;}
+
+.blanco {background-color: white;
+}
+
+.texto { text-align: center;
+position: absolute;
+font-size:20px;
+padding-left:13%;
+padding-top:1%;
+}
+
+.nota {font-size:12px;}
+
+.titulo {text-align: center;
+font-size:50px;
+
+}
+
+.nobullets {list-style-type: none;}
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #8877b9; 
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contacto {line-height: 30px;
+	background-color: #ffffff;
+	display: block;
+	padding: 8px;
+	width: 200px;}
+	
+	
+/*POP UP*/
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-bottom: 1px dotted #8877b9;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

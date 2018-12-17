@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="menu.css" rel="stylesheet">
+<link href="estilo.css" rel="stylesheet">
+<script src="jquery-3.3.1.min.js"></script>
+
+<script src="mnmenu-master/lib/jqmin.1.10.1.js" type="text/javascript"></script>
+<script src="mnmenu-master/src/jquery.mnmenu.js" type="text/javascript"></script>
+
+<title>Análisis</title>
+
+<script>
+
+function pop() {
+  var popup = document.getElementById("miPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+</head>
+
+<body>
+<div>
+<header>
+<img src="imgs/tgb.png" alt="Tumblr: una guía básica" width="100%" >
+</header>
+<ul id="idmenu" class="bluemenu">
+	<li><a href="index.html"  class="level-0">HomePage</a></li>
+    <li><a href="terminologia.html" class="level-0">Terminología</a>
+        <ul>
+			<li><a href="doramas.html">Doramas</a></li>
+			<li><a href="videos.html">Videos</a></li>
+            <li><a href="fic.html">Fanfiction</a> </li>
+            <li><a href="fangirl.html">Fangirl</a></li>
+        </ul>
+    </li>
+    <li><a href="expresiones.html"  class="level-0">Expresiones comunes</a>
+	<ul>
+		<li><a href="vine.html">Vines</a></li>
+	</ul>
+	</li>
+	<li><a href="anailisis.html"  class="level-0">Análisis</a></li>
+	<li><a href="ciencia.html"  class="level-0">Ciencia y motivación </a></li>
+	<li><a href="guias.html"  class="level-0">Guías </a>
+		<ul>
+		<li><a href="studyblr.html">Studyblr</a></li>
+		</ul>
+	</li>
+	<li><a href="juegos.html"  class="level-0">Juegos</a></li>
+	<li><a href="tatiana.html" class="level-0">Información personal</a></li>
+	
+</ul>
+
+<section class="gral">
+<img src="imgs/teorias/conspiracy.png" alt="Aprox de cómo se ponen" class="theory">
+<h1>Los análisis</h1>
+<p>Si hay algo por lo cual los usuarios de Tumblr deben estar muy orgullosos (además de su inclusión y sus memes) es de sus análisis sobre distintos temas.</p>
+<p><em>Por ejemplo:</em> se buscan pistas en todos los episodios de determinada serie para confirmar una teoría generada por el fandom.
+En el caso del fandom de Voltron, se buscan todos los detalles que pudieran señalar que una determinada pareja se va a volver
+ <span class="popup" onclick="pop()">canon	<span class="popuptext" id="miPopup">(Si no recuerdan qué es <em>canon</em> pueden ir a la sección de <a href="terminologia.html">Terminología</a> de la página).</span> </span> 
+ al final.</p>
+<p>Algunos análisis llegan a ser bastante extensos, y varias personas pueden participar de él en los comentarios. 
+Así, con varios usuarios complementando la teoría, se puede llegar a explicar algo de una serie (por ejemplo).
+Lo más importante de esto, sin embargo, qué tan detallados pueden llegar a ser con sus explicaciones. 
+Su nivel de análisis es muy abarcativo; desde el simbolismo hasta interpretaciones personales, esta gente sabe lo que hace.</p>
+<img src="imgs/teorias/jared.jpg" alt="Jared" class="compartido">
+<img src="imgs/teorias/sincearlyme.jpg" alt="sincearly me" class="compartido">
+<br>
+<img src="imgs/teorias/kick.jpg" alt="Klance is canon king" class="compartido">
+<img src="imgs/teorias/frankie.jpg" alt="Mansión Foster para amigos imaginarios" class="compartido">
+<br>
+<p>*<em>Sincearly, me</em> y Jared pertenecen ambos al musical <em>Dear Evan Hansen</em>. Si desean escuchar la canción pueden hacer click <a href="https://youtu.be/o-tza5YqAD4">aquí</a>*</p> 
+
+<p>Más allá de las teorías sobre las series, los musicales, los libros, las películas, etc., se generan teorías sobre temas "comunes". 
+Algunos de estos temas incluyen: multiversos, mundos paralelos, paradojas, vampiros en el espacio, entre otras cosas.
+A veces se generan conversaciones bastante graciosas (rozando lo bizarro), y en otros casos pueden llegar a ser justificadas al punto de ser convincentes.</p>
+<img src="imgs/teorias/child.jpg" alt="Child" class="compartido">
+<img src="imgs/teorias/mirror.jpg" alt="Mirror" class="compartido">
+<br>
+<img src="imgs/teorias/soul.jpg" alt="Soul" class="compartido">
+<img src="imgs/teorias/vampires.jpg" alt="Vampires" class="compartido">
+
+<p>Hay gente muy profunda en ese sitio. </p>
+</section>
+
+<footer>
+<address>
+Contacto: <a href="mailto: tati.kumert@gmail.com">tati.kumert@gmail.com</a>
+</address>
+<a href="tatiana.html">Más información</a>
+</footer>
+</div>
+
+<script>$(document).ready(function() {
+$('#idmenu').mnmenu();
+})</script>
+
+</body>
+</html>

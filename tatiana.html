@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="menu.css" rel="stylesheet">
+<link href="estilo.css" rel="stylesheet">
+<script src="jquery-3.3.1.min.js"></script>
+
+<script src="mnmenu-master/lib/jqmin.1.10.1.js" type="text/javascript"></script>
+<script src="mnmenu-master/src/jquery.mnmenu.js" type="text/javascript"></script>
+
+<title>Tatiana Kumert</title>
+
+<script type="text/javascript">
+function validarFormulario() { 
+	//validar nombre 
+   	if (document.formulario.nombre.value.length==0){ 
+      	 alert("Si no me decís tu nombre no sé cómo agradecerte :c") 
+      	 document.formulario.nombre.focus() 
+      	 return false; 
+   	} 
+	//validar apellido 
+   	if (document.formulario.apellido.value==""){ 
+      	 alert("Estoy segura de que existen muchas personas con ese nombre, necesito saber tu apellido también :D (por favor y gracias)") 
+      	 document.formulario.apellido.focus() 
+      	 return false; 
+   	} 
+	//validar email
+	var ck_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
+	valor = document.getElementById("email").value;
+	if( !(ck_email.test(valor)) ) {
+ 	 alert("¿No me pones un mail? ;-; ¿No querés que te lo agradezca? ;---;")
+ 	 return false;
+	}
+	//enviar formulario 
+   	alert("Muchas gracias por dejarme tu opinión <3"); 
+   	document.formulario.submit();
+
+}
+
+function enviarMail()
+{
+	validarFormulario();
+	var link="mailto:tati.kumert@gmail.com"
+	+ "?body=" + escape (document.getElementById ('comentarios').value);
+	window.location.href=link;
+	
+}
+
+
+</script>
+
+</head>
+
+<body>
+<div>
+<header>
+<img src="imgs/tgb.png" alt="Tumblr: una guía básica" width="100%" >
+</header>
+
+<ul id="idmenu" class="bluemenu">
+	<li><a href="index.html"  class="level-0">HomePage</a></li>
+    <li><a href="terminologia.html" class="level-0">Terminología</a>
+        <ul>
+			<li><a href="doramas.html">Doramas</a></li>
+			<li><a href="videos.html">Videos</a></li>
+            <li><a href="fic.html">Fanfiction</a> </li>
+            <li><a href="fangirl.html">Fangirl</a></li>
+        </ul>
+    </li>
+    <li><a href="expresiones.html"  class="level-0">Expresiones comunes</a>
+	<ul>
+		<li><a href="vine.html">Vines</a></li>
+	</ul>
+	</li>
+	<li><a href="anailisis.html"  class="level-0">Análisis</a></li>
+	<li><a href="ciencia.html"  class="level-0">Ciencia y motivación </a></li>
+	<li><a href="guias.html"  class="level-0">Guías </a>
+		<ul>
+		<li><a href="studyblr.html">Studyblr</a></li>
+		</ul>
+	</li>
+	<li><a href="juegos.html"  class="level-0">Juegos</a></li>
+	<li><a href="tatiana.html" class="level-0">Información personal</a></li>
+	
+</ul>
+
+<section class="gral">
+<img src="imgs/tatiana.jpeg" alt="Tatiana Kumert" class="foto">
+
+<h1>Información personal</h1>
+<ul class="datos">
+<li><strong>Nombre: </strong> Tatiana Kumert</li>
+<li><strong>Universidad Nacional de las Artes</strong>: Artes Multimediales</li>
+<li><strong>Materia:</strong> Informática General</li>
+<li><strong>Turno: </strong>Mañana</li>
+<li><strong>Cátedra: </strong>Valeria Drelichman, Pedro Paleo, Leonardo Nadel, Norma Morales</li>
+<li><strong>Año:</strong> 2018</li>
+<li><em>Link a <strong><a href="https://www.tumblr.com">Tumblr</a></strong></em></li>
+<li><strong>Esta es una página creada como trabajo práctico para la facultad, no tiene fines comerciales.</strong></li>
+</ul>
+<br>
+<br>
+<h2>Puedes dejar un comentario si gustas</h2>
+<form action="mailto:tati.kumert@gmail.com" method="post" enctype="text/plain" name="formulario" id="formulario" class="contacto">
+    <label for="nombre">Nombre* </label>
+	<input type="text" name="nombre" id="nombre">
+    <label for="apellido">Apellido* </label>
+    <input type="text" name="apellido" id="apellido">
+    <label for="email">Email* </label>
+    <input type="email" name="email" id="email">
+    <label for="comentarios">Comentarios</label>
+    <textarea name="comentarios" id="comentarios" cols="45" rows="5"></textarea>
+	
+    <input type="submit" name="enviar" id="envio" value="Enviar" onclick="enviarMail();" />
+</form>
+<br>
+<br>
+
+<h1>Lista de artistas: </h1>
+<ul>
+<li><strong>Kalouriis</strong>
+	<ul>
+	<li>Tumblr:<a href="http://kalouriis.tumblr.com/">@kalouriis</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/kalouriisat.png" alt="Kalouriis Adventure Time" class="art">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>Marurenai</strong>
+	<ul>
+	<li>Tumblr: <a href="https://marurenai.tumblr.com/">@marurenai</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/marurenaimoana.jpg" alt="Marurenai Moana" class="art">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>Cinderile</strong>
+	<ul>
+	<li>Tumblr: <a href="https://cinderile.tumblr.com/">@cinderile</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/cinderiledisney.jpg" alt="Cinderile Disney" class="artV">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>A-curious-squirrel</strong>
+	<ul>
+	<li>Tumblr: <a href="http://a-curious-squirrel.tumblr.com/tagged/myart">@a-curious-squirrel</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/acurioussquirrelat.jpg" alt="A-curious-squirrel Adventure Time" class="art">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>Amezure</strong>
+	<ul>
+	<li>Tumblr: <a href="http://amezure.tumblr.com/">@amezure</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/amezurebnha.jpg" alt="Amezure Boku no Hero Academia" class="art">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>Imtoobiforyou</strong>
+	<ul>
+	<li>Tumblr: <a href="https://imtoobiforyou.tumblr.com/post/171138467668/i-knew-something-smelled-fishy-here-virgil-and">@imtoobiforyou</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/imtoobiforyouss.png" alt="Imtoobiforyou Sanders Sides" class="art">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>Ct-draws</strong>
+	<ul>
+	<li>Tumblr: <a href="https://ct-draws.tumblr.com/">@ct-draws</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/ctdrawsdisney.png" alt="Ct-draws Disney" class="art">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>Flynns draws</strong>
+	<ul>
+	<li>Tumblr: <a href="https://flynns-drawings.tumblr.com/">@flynns-drawings</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/flynnsdrawsbts.jpg" alt="Flynns draws BTS" class="artV">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>Ikimaru</strong>
+	<ul>
+	<li>Tumblr: <a href="http://ikimaru.tumblr.com/">@ikimaru</a></li>
+	<li>Piezas utilizadas:
+	<br>
+	<img src="imgs/fanart/ikimarusr.png" alt="Ikimaru She-Ra" class="art">
+	<br>
+	<img src="imgs/fanart/ikimaruvld.png" alt="Ikimaru Voltron Legendary Defender" class="art">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>T-Stray</strong>
+	<ul>
+	<li>Tumblr: <a href="http://t-stray.tumblr.com/post/180505445705">@t-stray</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/tstrayk.png" alt="T-Stray Kuroshitsuji" class="artV">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>Frozenpinetree</strong>
+	<ul>
+	<li>Tumblr: <a href="http://frozenpinetree.tumblr.com/">@frozenpinetree</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/frozenpinetreek.png" alt="Frozenpinetree Kuroshitsushi" class="art">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>Noquelle</strong>
+	<ul>
+	<li>Tumblr: <a href="http://noquelle.tumblr.com/">@noquelle</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/noquellebts.png" alt="Noquelle BTS" class="artV">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>Erstwhilesky</strong>
+	<ul>
+	<li>Tumblr: <a href="http://erstwhilesky.tumblr.com/post/180883269217/sleepy-virgil">@erstwhilesky</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/erstwhileskyss.png" alt="Erstwhilesky Sanders Sides" class="art">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>Vetur02</strong>
+	<ul>
+	<li>Tumblr: <a href="http://vetur02.tumblr.com/">@vetur02</a></li>
+	<li>Pieza utilizada:
+	<br>
+	<img src="imgs/fanart/vetur02vld.jpg" alt="Vetur02 Voltron Legendary Defender" class="artV">
+	</li>
+	</ul>
+</li> 
+<br>
+<li><strong>Viria</strong>
+	<ul>
+	<li>Tumblr: <a href="http://viria.tumblr.com">@viria</a></li>
+	<li>Piezas utilizadas:
+	<br>
+	<img src="imgs/fanart/viriapj.png" alt="Viria Percy Jackson" class="art">
+	<br>
+	<img src="imgs/fanart/viriapj2.png" alt="Viria Percy Jackson" class="artV">
+	</li>
+	</ul>
+</li> 
+<br>
+</ul>
+
+</section>
+
+<footer>
+<address>
+Contacto: <a href="mailto: tati.kumert@gmail.com">tati.kumert@gmail.com</a>
+</address>
+<a href="tatiana.html">Más información</a>
+</footer>
+</div>
+
+<script>$(document).ready(function() {
+$('#idmenu').mnmenu();
+})</script>
+
+
+</body>
+</html>
+
